@@ -18,7 +18,7 @@ function App() {
   function convert(){
     setConvertedAmount(amount*curencyinfo[To])
   }
-
+  
   return (
     <>
       <div
