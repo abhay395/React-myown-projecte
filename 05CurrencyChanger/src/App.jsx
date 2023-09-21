@@ -27,8 +27,11 @@ function App() {
           backgroundImage: `url('${'https://images.pexels.com/photos/3793689/pexels-photo-3793689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}')`,
         }}
       >
-        <div className="w-full">
-          <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div className="w-full flex justify-center items-center">
+        <div className="w-96 mx-4 ">
+      <img className="w-full h-72 rounded-2xl" src="https://images.pexels.com/photos/18264716/pexels-photo-18264716/free-photo-of-man-in-headphones-showing-programming-process-on-a-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+    </div>
+          <div className=" mx-0 flex w-full max-w-md  border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
