@@ -4,6 +4,7 @@ function TodoForm() {
     const [todoT,settodot]=useState('')
     const {addTodo}=useTodo()
     const addtext=()=>{
+      if(!todoT) return;
     addTodo({id:Date.now(),complete:false,todoText:todoT})
 }
 
