@@ -43,7 +43,8 @@ and we export all fuction in this reducer with slice indevisvaly like this
 
 ```
 todoSlice.action isliy rakha gya hai jab hame jarurate padegi hame iska use karge
-and then import over reducer in store and give it to store  like this 
+and then import over reducer in store and give it to store  like this
+because store ke pass ager reducer ke awarness nahi hogi to unki value hame change nahi  kar sakte hai 
 
 ```
 import {configureStore} from '@reduxjs/toolkit'
@@ -51,5 +52,17 @@ import  todoReducer from '../feature/todo/todoSlice'
 export const store=configureStore({
     reducer:todoReducer
 })
+
+```
+## step 3 how sent data
+
+when we want to sent a value to store we use useDispatch()
+it use reducer to change value in store
+like this
+```
+<!-- first you make a variable  -->
+ const dispatch=useDispatch()
+ <!-- second what you sent in store uski value daal do or kise reducer me daal rahe vo bhi batana -->
+  dispatch(addTodo(input))
 
 ```
