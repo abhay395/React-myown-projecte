@@ -1,11 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# ReduxToolKit
 
 # steps for use Reduxtoolkite
 ## step 1 make store
@@ -66,3 +59,19 @@ like this
   dispatch(addTodo(input))
 
 ```
+## step 4 how take data
+
+when we want to take data in over componente we use useSelector ye hame state ka use karke value hame deta hai like this and we hold data in variable 
+```
+const todos=useSelector(state=>state.todos)
+```
+## step 5 and last step rape all componente in provider it's provider i am take from react-redux 
+and it have a store property for like a value properti in contax api 
+ it's do like this
+
+ ```
+ import { Provider } from 'react-redux'
+ <Provider store={store} >
+    <App />
+  </Provider>
+ ```
