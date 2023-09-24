@@ -32,4 +32,24 @@ and then make slice(it's a big part of reducer and reducer is functinality) so f
     }
 })
 ``````
-when we make a todoslice  we alwes make a name and give it a name make a reducer we maxime time use {} in reducer and alwas throw function in this reducer and in this reducer function  call indevisval reducer 
+when we make a todoslice  we alwes make a name and give it a name make a reducer we maxime time use {} in reducer and alwas throw function in this reducer one slice take many reducer 
+
+and in this function acsses of state and action state meanse intsital value or intial {} like and action give acess of id and text like property and it's give by action.paylod
+
+and we export all fuction in this reducer with slice indevisvaly like this
+```
+ export const {addTodo,removeTodo}=todoSlice.actions
+ export default todoSlice.reducer
+
+```
+todoSlice.action isliy rakha gya hai jab hame jarurate padegi hame iska use karge
+and then import over reducer in store and give it to store  like this 
+
+```
+import {configureStore} from '@reduxjs/toolkit'
+import  todoReducer from '../feature/todo/todoSlice'
+export const store=configureStore({
+    reducer:todoReducer
+})
+
+```
